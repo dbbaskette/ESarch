@@ -1,0 +1,38 @@
+---
+applications:
+- name: esrefarch-demo-trader-ui
+  timeout: 120
+  instances: 1
+  buildpacks: 
+    - staticfile_buildpack
+  path: build
+  env:
+    TRUST_CERTS: api.run.pivotal.io
+- name: esrefarch-demo-trading-engine
+  path: target/trading-engine.jar
+  timeout: 120
+  instances: 1
+  buildpacks: 
+    - java_buildpack
+  health-check-type: port
+  services:
+    - enginedb
+    - rabbit
+    - config
+    - registry
+  env:
+    TRUST_CERTS: api.run.pivotal.io
+- name: esrefarch-demo-trader-app
+  path: target/trader-app.jar
+  timeout: 120
+  instances: 1
+  buildpacks: 
+    - java_buildpack
+  health-check-type: port
+  services:
+    - appdb
+    - rabbit
+    - config
+    - registry
+  env:
+    TRUST_CERTS: api.run.pivotal.io

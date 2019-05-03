@@ -1,0 +1,23 @@
+service_name: enginedb
+service: cleardb
+service_plan: spark
+---
+service_name: appdb
+service: cloudampq
+service_plan: lemur
+---
+service_name: rabbit
+service:
+service_plan:
+---
+service_name: registry
+service: p-service-registry
+service_plan: trial
+---
+service_name: config
+service: p-config-server
+service_plan: trial
+parameters:
+  git:
+    uri: https://github.com/dbbaskette/ESarch-conf/{application}
+   
