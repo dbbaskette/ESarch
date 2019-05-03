@@ -3,6 +3,10 @@ service: cleardb
 service_plan: spark
 ---
 service_name: appdb
+service: cleardb
+service_plan: spark
+---
+service_name: rabbit
 service: cloudamqp
 service_plan: lemur
 ---
@@ -15,5 +19,5 @@ service: p-config-server
 service_plan: trial
 parameters:
   git:
-    uri: https://github.com/dbbaskette/ESarch
-    searchPaths: "configuration/{application}"
+    uri: https://github.com/dbbaskette/ESarch-conf
+    searchPaths: "{application}"
