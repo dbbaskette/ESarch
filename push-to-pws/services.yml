@@ -16,3 +16,4 @@ service_plan: trial
 parameters:
   git:
     uri: https://github.com/dbbaskette/ESarch-conf
+    searchPaths: "{application}"
