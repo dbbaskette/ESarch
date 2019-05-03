@@ -10,6 +10,10 @@ service_name: enginedb
 service: cleardb
 service_plan: spark
 ---
+service_name: appdb
+service: cleardb
+service_plan: spark
+---
 service_name: rabbit
 service: cloudamqp
 service_plan: lemur
