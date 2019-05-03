@@ -1,11 +1,11 @@
 ---
 applications:
-- name: esrefarch-demo-trader-ui
+- name: trader-ui
   timeout: 120
   instances: 1
   env:
     TRUST_CERTS: api.run.pivotal.io
-- name: esrefarch-demo-trading-engine
+- name: trading-engine
   path: target/trading-engine.jar
   timeout: 120
   instances: 1
@@ -17,7 +17,7 @@ applications:
     - registry
   env:
     TRUST_CERTS: api.run.pivotal.io
-- name: esrefarch-demo-trader-app
+- name: trader-app
   path: target/trader-app.jar
   timeout: 120
   instances: 1
