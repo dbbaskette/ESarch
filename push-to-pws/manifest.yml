@@ -1,6 +1,6 @@
 ---
 applications:
-- name: trader-ui
+- name: trader-app-ui
   timeout: 120
   instances: 1
   env:
