@@ -15,5 +15,5 @@ service: p-config-server
 service_plan: trial
 parameters:
   git:
-    uri: https://github.com/dbbaskette/ESarch-conf
+    uri: https://github.com/dbbaskette/ESarch
     searchPaths: "configuration/{application}"
