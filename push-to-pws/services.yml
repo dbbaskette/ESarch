@@ -21,4 +21,3 @@ service_plan: lemur
 service_name: appdb
 service: cleardb
 service_plan: spark
----
