@@ -14,6 +14,6 @@ service_name: registry
 service: p-service-registry
 service_plan: trial
 ---
-service_name: rabbit
-service: cloudamqp
-service_plan: lemur
+service_name: appdb
+service: cleardb
+service_plan: spark
