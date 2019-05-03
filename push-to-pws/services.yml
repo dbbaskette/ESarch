@@ -3,7 +3,7 @@ service: cleardb
 service_plan: spark
 ---
 service_name: appdb
-service: cloudampq
+service: cloudamqp
 service_plan: lemur
 ---
 service_name: registry
